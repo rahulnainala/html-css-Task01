@@ -1,0 +1,141 @@
+html,
+body {
+  color: black;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  font-size: 18px;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Styles for the navigation items */
+.NavItems {
+  display: flex; /* Use flexbox for navigation items */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.NavItems ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Display items in a row */
+}
+
+.NavItems li {
+  margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.NavItems a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Example link color */
+  padding: 10px; /* Add padding around links */
+}
+
+.NavItems a:hover {
+  text-decoration: underline; /* Underline links on hover */
+  color: #f2e7d5; /* Example hover color */
+}
+
+.Features {
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  min-height: fit-content;
+  max-height: max-content;
+  align-items: center;
+}
+.Logo img {
+  width: 98px;
+  height: 98px;
+}
+.ContentImage {
+  flex: 1; /* Take up remaining space */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Relative positioning for absolute child */
+}
+
+.ContentImage img {
+  width: 100%; /* Ensure the image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space beneath image */
+  object-fit: cover; /* Cover the entire container */
+}
+
+.ItemDetails {
+  flex: 1; /* Take up remaining space */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  border: 3px #6d9886 solid; /* Rounded corners */
+}
+
+.ItemDetails h2 {
+  margin-bottom: 10px;
+}
+
+.ItemDetails h3 {
+  margin-bottom: 5px;
+}
+
+.ItemDetails table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ItemDetails table th {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.ItemDetails ul {
+  padding-left: 20px;
+}
+
+.Pricing {
+  color: green;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px; /* Adjust font size */
+}
+
+.contact-form h1 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #6d9886;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f2e7d5;
+  color: black;
+}
